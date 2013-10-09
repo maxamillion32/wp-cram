@@ -10,18 +10,11 @@ Converts A Fresh WordPress installation into a CRM.  Originally this was built t
 It's important to note that *this plugin locks down wordpress for non-logged in users* as it stands and *should not be used on a public or production site*.  This plugin does not style any non-admin pages/posts relative to projects, tasks, clients, etc.  I would love to find the time to put together the code to create pre-built templates that injected the taxos and custom post types into the theme of the user's choice so that we can integrate customer communication and billing via WP CR[a]M - and I have plans to in the future - so if you would like to do so, feel free to *fork and pull* to your heart's desire!  And please do feel free to notify me of your mods in that direction (I will be adding my current WP CR[a]M task list in the future, time permitting).
 
 ###CREDITS:
-WP-CR[a]M uses multiple plugins in it's core.  Respect & Credits go to the authors of these plugins.  Here is a list of the interior plugins that I used to save me countless hours in creating WP CR[a]M
-WP-CR[a]M function properly:
-1. MP6: Used for it's sexy WP Admin UI, until I have time to create my own
-	http://wordpress.org/plugins/mp6/
-2. Post 2 Post: Handles relationships between projects/tasks/clients/contacts
-	http://wordpress.org/plugins/posts-to-posts/
-3. CR[a]M Clients: Handles Clients for WP-CR[a]M
-	Not in repository, I wrote this for WP-CR[a]M specifically
-4. CR[a]M Projects: Handles Projects for WP-CR[a]M
-	Not in repository, I wrote this for WP-CR[a]M specifically
-5. CR[a]M Tasks: Handles Tasks for WP-CR[a]M
-	Not in repository, I wrote this for WP-CR[a]M specifically	
+WP-CR[a]M uses two very sexy plugins in it's core.  Respect & Credits go to the authors of these plugins.  Here is a list of the interior plugins that I used to save me countless hours in creating WP CR[a]M to make it function properly:
+<ul>
+<li>MP6: Used for it's sexy WP Admin UI, until I have time to create my own</li>
+<li>Post 2 Post: Handles relationships between projects/tasks/clients/contacts</li>
+</ul>
 
 In order to load these interior plugins correctly, their plugin headers have been
 removed.  If you have any questions about these plugins and how they function 
