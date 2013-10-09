@@ -22,7 +22,8 @@ independently from WP-CR[a]M, please use the links above to contact the plugin
 developers.
 
 #Current Features
-1. Clients (CPT with custom taxonomies) *Not to be confused with **users**, clients can be companies or people*
+###Clients
+(CPT with custom taxonomies) *Not to be confused with **users**, clients can be companies or people*
 
 <ul>
 	<li>Clients come standard with some basic metaboxes for basic data fields such as contact information, social media profiles and client credentials.</li>
@@ -47,7 +48,8 @@ developers.
 	<li>You can associate Clients to Projects</li>
 	<li>You can associate Clients to Tasks</li>
 </ul>
-2. Projects (CPT with custom taxonomies) *Quick Note: Projects are big, Tasks are small, Projects can be compiled with multiple Tasks.*
+###Projects
+(CPT with custom taxonomies) *Quick Note: Projects are big, Tasks are small, Projects can be compiled with multiple Tasks.*
 
 <ul>
 	<li>Projects come standard with some basic metaboxes for collecing the standard project data such as start date, deadline date, project scope, project credentials, total hours and hours billed</li>
@@ -68,7 +70,8 @@ developers.
 	</li>
 </ul>
 
-3. Tasks (CPT with custom taxonomies) *Quick Note: Tasks are small, Projects are big, Tasks can be assigned to a specific project*
+###Tasks
+(CPT with custom taxonomies) *Quick Note: Tasks are small, Projects are big, Tasks can be assigned to a specific project*
 
 <ul>
 	<li>Tasks come standard with some basic metaxoes for collecting the standard task data such as start date, deadline, task scope, necessary credentials, total hours and hours billed.</li>
@@ -91,7 +94,8 @@ developers.
 	</li>
 </ul>
 
-4. Custom User Roles *Custom user roles were created to help organize future users of the plugin from a management standpoint*
+###Custom User Roles
+*Custom user roles were created to help organize future users of the plugin from a management standpoint*
 
 <ul>
 	<li>Client Contact *Client contacts are your contact(s) for the "Client" - which would typically be a company that you are doing work for*. ***Capabilities listed below:***
