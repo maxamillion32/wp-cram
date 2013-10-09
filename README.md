@@ -26,6 +26,7 @@ developers.
 <ul>
 <li>Clients come standard with some basic metaboxes for basic data fields such as contact information, social media profiles and client credentials.</li>
 <li>You can associate Clients to Client Statuses(taxo) There are 8 preset Client Statuses and you can easily create your own in the wp-admin area under `clients > client status > create new`</li>
+</ul>
 - Active Client *Currently working with this client on REGULAR BASIS.*
 - Average Client *This is an AVERAGE CLIENT that has projects/tasks at an average rate.*
 - Freebie Client *self explanatory*
@@ -34,6 +35,7 @@ developers.
 - Prospective Client *This is a POTENTIAL CLIENT and no projects or tasks have been started.*
 - Referral Client *This is a client that REFERS OTHER CLIENTS TO YOU. *
 - Referred Client *This is a client that WAS REFERRED TO YOU BY ANOTHER CLIENT.*
+<ul>
 <li>You can associate Clients to Client Contacts, Assigned Support Reps, Referred Clients and Referral Clients *these user roles are preset custom user roles with custom capabilities based on the role*</li>
 <li>You can assign a Client to a Client Type(taxo)</li>
 - Client Types are *not preset* so that you can use terminologies that you prefer like "design", "development", "seo" or whatever your heart desires.
