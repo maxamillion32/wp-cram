@@ -1,0 +1,6 @@
+[submodule "wp-posts-to-posts"]
+	path = wp-posts-to-posts
+	url = https://github.com/scribu/wp-posts-to-posts.git
+[submodule "mp6"]
+	path = mp6
+	url = https://github.com/wp-plugins/mp6.git
