@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Wp-CR[a]M by vegaskev</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Wp-CR[a]M</h1>
+        <h2>WordPress CRM</h2>
+        <a href="https://github.com/vegaskev/wp-cram" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="wp-cram" class="anchor" href="#wp-cram"><span class="octicon octicon-link"></span></a>WP CR[a]M</h1>
+
+<p>Converts a fresh WordPress installation into a CRM with a built in Project &amp; Task Manager.  Originally this was built to help me manage my clients, projects and tasks however I felt that since originally, I wasn't successful in utilizing the existing CRM plugins for WordPress as sufficient tools for the task, I should share my Frankenstein with the world.  <strong><em>Enter WP CR[a]M</em></strong>  I hope that others find it just as useful and flexible as I have.</p>
+
+<p><strong><em>As mentioned above, this was originally built for myself, therefore it's somewhat geared towards Web Development and/or Web Design, however, you can easily fork this and modify it to work for any business you'd like with a bit of code.</em></strong></p>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>This plugin was developed to manage Web Development and Web Design Clients, though out of the box it can easily be used to handle a wider variety of client types wherein "projects" and "tasks" are required to fulfill a client's needs.  Out of the box it is still missing some <strong><em>user friendly</em></strong> features, which are listed at the bottom of this page under <strong><em>Future Features</em></strong>.  As it stands currently, WP CR[a]M is still a fully functional CRM and I use it daily as my own CRM to manage my clients and help me stay on task - though it will be significantly more [a]WESOME once I (or someone else) has the time to implement the Future Features listed below.  <em>hint hint =&gt; FORK IT &amp; CONTRIBUTE</em></p>
+
+<p><strong><em>Screenshots Coming Soon</em></strong></p>
+
+<h2>
+<a name="notice--credits" class="anchor" href="#notice--credits"><span class="octicon octicon-link"></span></a>Notice &amp; Credits</h2>
+
+<h3>
+<a name="important-notice" class="anchor" href="#important-notice"><span class="octicon octicon-link"></span></a>IMPORTANT NOTICE:</h3>
+
+<p>It's important to note that <em>this plugin locks down wordpress for non-logged in users</em> as it stands and <em>should not be used on a public or production site</em>.  This plugin does not style any non-admin pages/posts relative to projects, tasks, clients, etc.  I would love to find the time to put together the code to create pre-built templates that injected the taxos and custom post types into the theme of the user's choice so that we can integrate customer communication and billing via WP CR[a]M - and I have plans to in the future - so if you would like to do so, feel free to <em>fork and pull</em> to your heart's desire!  And please do feel free to notify me of your mods in that direction (I will be adding my current WP CR[a]M task list in the future, time permitting).</p>
+
+<h3>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>CREDITS:</h3>
+
+<p>WP-CR[a]M uses two very sexy plugins in it's core.  Respect &amp; Credits go to the authors of these plugins.  Here is a list of the interior plugins that I used to save me countless hours in creating WP CR[a]M to make it function properly:</p>
+
+<ul>
+<li>MP6: Used for it's sexy WP Admin UI, until I have time to create my own</li>
+    <li>Post 2 Post: Handles relationships between projects/tasks/clients/contacts</li>
+</ul><p>In order to load these interior plugins correctly, their plugin headers have been removed.  If you have any questions about these plugins and how they function independently from WP-CR[a]M, please use the links above to contact the plugin developers.</p>
+
+<h1>
+<a name="current-features" class="anchor" href="#current-features"><span class="octicon octicon-link"></span></a>Current Features</h1>
+
+<h3>
+<a name="clients" class="anchor" href="#clients"><span class="octicon octicon-link"></span></a>Clients</h3>
+
+<p>(CPT with custom taxonomies) <em>Not to be confused with *</em>users**, clients can be companies or people*</p>
+
+<ul>
+<li>Clients come standard with some basic metaboxes for basic data fields such as contact information, social media profiles and client credentials.</li>
+    <li>You can associate Clients to Client Statuses(taxo) There are 8 preset Client Statuses and you can easily create your own in the wp-admin area under `clients &gt; client status &gt; create new`
+        <ul>
+<li>Active Client *Currently working with this client on REGULAR BASIS.*</li>
+            <li>Average Client *This is an AVERAGE CLIENT that has projects/tasks at an average rate.*</li>
+            <li>Freebie Client *self explanatory*</li>
+            <li>Legacy Client *LONGSTANDING CLIENT that you have worked with for a long time.*</li>
+            <li>Past Client *This is a client that you NO LONGER DO BUSINESS WITH.*</li>
+            <li>Prospective Client *This is a POTENTIAL CLIENT and no projects or tasks have been started.*</li>
+            <li>Referral Client *This is a client that REFERS OTHER CLIENTS TO YOU.*</li>
+            <li>Referred Client *This is a client that WAS REFERRED TO YOU BY ANOTHER CLIENT.*</li>
+        </ul>
+</li>
+    <li>You can associate Clients to Client Contacts, Assigned Support Reps, Referred Clients and Referral Clients *these user roles are preset custom user roles with custom capabilities based on the role*</li>
+    <li>You can assign a Client to a Client Type(taxo)
+        <ul>
+<li>Client Types are *not preset* so that you can use terminologies that you prefer like "design", "development", "seo" or whatever your heart desires.</li>
+        </ul>
+</li>
+    <li>You can associate Clients to Projects</li>
+    <li>You can associate Clients to Tasks</li>
+</ul><h3>
+<a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>Projects</h3>
+
+<p>(CPT with custom taxonomies) <em>Quick Note: Projects are big, Tasks are small, Projects can be compiled with multiple Tasks.</em></p>
+
+<ul>
+<li>Projects come standard with some basic metaboxes for collecing the standard project data such as start date, deadline date, project scope, project credentials, total hours and hours billed</li>
+    <li>Projects come standard with basic preset Project Statuses (taxo)
+        <ul>
+<li>Active Project *This is an active project, currently IN PROGRESS.*</li>
+            <li>Client Reviewing Project *This project is currently being REVIEWED BY CLIENT.*</li>
+            <li>Internal Project Review *This project is currently being REVIEWED INTERNALLY.*</li>
+            <li>Pending Project *This project is currently INACTIVE AND PENDING.*</li>
+            <li>Project Completed *This project has been reviewed and COMPLETED. NO WORK NEEDED.*</li>
+        </ul>
+</li>
+    <li>Projects can be assigned Project Managers and Tasks</li>
+    <li>You can assign a Project to a Project Type (taxo)
+        <ul>
+<li>Project Types are *not preset* following the same logic as Client Types so that you may use them as you wish.</li>
+        </ul>
+</li>
+</ul><h3>
+<a name="tasks" class="anchor" href="#tasks"><span class="octicon octicon-link"></span></a>Tasks</h3>
+
+<p>(CPT with custom taxonomies) <em>Quick Note: Tasks are small, Projects are big, Tasks can be assigned to a specific project</em></p>
+
+<ul>
+<li>Tasks come standard with some basic metaxoes for collecting the standard task data such as start date, deadline, task scope, necessary credentials, total hours and hours billed.</li>
+    <li>Tasks come standard with basic preset Task Statuses (taxo)
+        <ul>
+<li>Active Task *This is an active task, currently IN PROGRESS.*</li>
+            <li>Client Reviewing Task *This task is currently being REVIEWED BY CLIENT.*</li>
+            <li>Internal Task Review *This task is currently being REVIEWED INTERNALLY.*</li>
+            <li>Pending Task *This task is currently INACTIVE AND PENDING.*</li>
+            <li>Task Completed *This task has been reviewed and COMPLETED. NO WORK NEEDED.*</li>
+        </ul>
+</li>
+    <li>Tasks can be assigned Task Managers</li>
+    <li>Tasks can be associated with a specific client</li>
+    <li>Tasks can be associated with a specific project.</li>
+    <li>You can assign a Task to a Task Type (taxo)
+        <ul>
+<li>Task Types are *not preset* following the same logic as Client Types &amp; Project Types so that you may use them as you wish.</li>
+        </ul>
+</li>
+</ul><h3>
+<a name="custom-user-roles" class="anchor" href="#custom-user-roles"><span class="octicon octicon-link"></span></a>Custom User Roles</h3>
+
+<p><em>Custom user roles were created to help organize future users of the plugin from a management standpoint</em></p>
+
+<ul>
+<li>Client Contact *Client contacts are your contact(s) for the "Client" - which would typically be a company that you are doing work for*. ***Capabilities listed below:***
+        <ul>
+<li>`read`</li>
+        </ul>
+</li>
+    <li>Support *Support role is for employees that you would want to have access to your Clients, Projects and Tasks to help you faciliate and manage your clients, projects and tasks.* ***Capabilities listed below:***
+        <ul>
+<li>`read`</li>
+            <li>`edit_posts`</li>
+            <li>`edit_others_posts`</li>
+            <li>`delete_posts` 
+        </li>
+</ul>
+</li>
+    <li>Task Manager *This is so you can assign an employee to handle this specific task* ***Capabilities listed below:***
+        <ul>
+<li>`read`</li>
+            <li>`edit_posts`</li>
+            <li>`edit_others_posts`</li>
+            <li>`delete_posts` 
+        </li>
+</ul>
+</li>
+    <li>Project Manager *Project Managers are assigned individuals within your organization that have been tasked with managing a specific project* ***Capabilities listed below:***
+        <ul>
+<li>`read`</li>
+            <li>`edit_posts`</li>
+            <li>`edit_others_posts`</li>
+            <li>`delete_posts` 
+        </li>
+</ul>
+</li>
+</ul><h1>
+<a name="future-features" class="anchor" href="#future-features"><span class="octicon octicon-link"></span></a>Future Features</h1>
+
+<p><strong><em>Please note that I have no active schedule to implement any of these features as they all depend on available time and resources, though I do have full intentions on adding them in the future</em></strong></p>
+
+<ul>
+<li>Dashboard Reports &amp; Analytics to better manage pending tasks, projects, appointements, etc.</li>
+    <li>Front End usage for communicating with clients through WP CR[a]M and keeping them updated on the status of their projects/tasks as you see fit.  This will also allow you to optionally use the comments system as a communication tool within the CRM - which has been activated during the custom post type registration for all cpts in this plugin.</li>
+    <li>Twilio API Integration so that calls and text messages to clients can be made from your browser or cellphone directly from a 'Client' screen.</li>
+</ul><h2>
+<a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h2>
+
+<p>Contributions are 100% welcome.  I can't promise that every contribution will make it in here, but if the demand calls for it and someone codes it, we'll either get it in core, or you can make it a module and we'll link to it here for others to use and fork as they see fit.  If you have a question about contributing, feel free to contact me at @TheVegasKev on Twitter or Skype me @VegasKev88.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/vegaskev/wp-cram/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/vegaskev/wp-cram/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/vegaskev/wp-cram"></a> is maintained by <a href="https://github.com/vegaskev">vegaskev</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
