@@ -10,7 +10,8 @@ License: GPL2...of course
 
 /**********************************************************************************/
 /**********************************************************************************/
-/*
+/*    While this information is in the README.md, too many people never read readme files, so I'm including it where people are more likely to see it.
+
 
 NOTICE: WP-CR[a]M uses multiple plugins in it's core.  Respect & Credits go to 
 the authors of these plugins.  Here is a list of the interior plugins used to make
@@ -30,6 +31,7 @@ In order to load these interior plugins correctly, their plugin headers have bee
 removed.  If you have any questions about these plugins and how they function 
 independently from WP-CR[a]M, please use the links above to contact the plugin
 developers.
+
 
 */
 /**********************************************************************************/
