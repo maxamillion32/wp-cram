@@ -1,7 +1,10 @@
 # WP CR[a]M
-Converts A Fresh WordPress installation into a CRM.  Originally this was built to help me manage my clients, projects and tasks however I felt that since the current WP CRM options either don't do enough or do too much, I thought I'd share this so that everyone has a nice base to build their own CRM off of out of WordPress.
+Converts a fresh WordPress installation into a CRM with a built in Project & Task Manager.  Originally this was built to help me manage my clients, projects and tasks however I felt that since originally, I wasn't successful in utilizing the existing CRM plugins for WordPress as sufficient tools for the task, I should share my Frankenstein with the world.  ***Enter WP CR[a]M***  I hope that others find it just as useful and flexible as I have.
 
-***As mentioned above, this was originally built for myself, therefore it's somewhat geared towards Web Development and/or Web Design, however, you can easily fork this and modify it to work for any business at all with a bit of code.***
+***As mentioned above, this was originally built for myself, therefore it's somewhat geared towards Web Development and/or Web Design, however, you can easily fork this and modify it to work for any business you'd like with a bit of code.***
+
+### Usage
+This plugin was developed to manage Web Development and Web Design Clients, though out of the box it can easily be used to handle a wider variety of client types wherein "projects" and "tasks" are required to fulfill a client's needs.  Out of the box it is still missing some ***user friendly*** features, which are listed at the bottom of this page under ***Future Features***.  As it stands currently, WP CR[a]M is still a fully functional CRM and I use it daily as my own CRM to manage my clients and help me stay on task - though it will be significantly more [a]WESOME once I (or someone else) has the time to implement the Future Features listed below.  *hint hint => FORK IT & CONTRIBUTE*
 
 ***Screenshots Coming Soon***
 
@@ -16,10 +19,7 @@ WP-CR[a]M uses two very sexy plugins in it's core.  Respect & Credits go to the 
 	<li>Post 2 Post: Handles relationships between projects/tasks/clients/contacts</li>
 </ul>
 
-In order to load these interior plugins correctly, their plugin headers have been
-removed.  If you have any questions about these plugins and how they function 
-independently from WP-CR[a]M, please use the links above to contact the plugin
-developers.
+In order to load these interior plugins correctly, their plugin headers have been removed.  If you have any questions about these plugins and how they function independently from WP-CR[a]M, please use the links above to contact the plugin developers.
 
 #Current Features
 ###Clients
@@ -139,7 +139,5 @@ developers.
 	<li>Twilio API Integration so that calls and text messages to clients can be made from your browser or cellphone directly from a 'Client' screen.</li>
 </ul>
 
-
-### Usage
-
-#COMING SOON
+##Contributions
+Contributions are 100% welcome.  I can't promise that every contribution will make it in here, but if the demand calls for it and someone codes it, we'll either get it in core, or you can make it a module and we'll link to it here for others to use and fork as they see fit.  If you have a question about contributing, feel free to contact me at @TheVegasKev on Twitter or Skype me @VegasKev88.
