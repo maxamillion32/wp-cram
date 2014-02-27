@@ -210,6 +210,10 @@ function cram_project_details_metabox_meta_callback( $post ) {
 
 <!-- adding the fields and content to the metabox -->
 	<h2>Project Kickoff & Project Deadline</h2>
+	<p>
+		<label for="storm-request-title-subject" class="storm-request-title-subject-title"><strong>Subject/Title</strong></label>
+		<input type="text" name="storm-request-title-subject-entry" id="storm-request-title-subject" value="<?php echo $storm_request_title_stored_meta['storm-request-title-subject-entry'][0]; ?>">
+	</p>
     <p>
         <label for="cram-projects-start-date" class="cram-projects-start-date-title"><strong>Start Date</strong></label>
         <input type="text" name="cram-projects-start-date-entry" id="cram_projects_start_date" class="datepicker-field" value="<?php echo $cram_projects_stored_meta['cram-projects-start-date-entry'][0]; ?>" />
@@ -255,6 +259,10 @@ function cram_projects_meta_save( $post_id ) {
     }
  
     // Checks for input and sanitizes/saves if needed
+	if( isset( $_POST[ 'storm-request-title-subject-entry' ] ) ) {
+    	update_post_meta( $post_id, 'storm-request-title-subject-entry', sanitize_text_field( $_POST[ 'storm-request-title-subject-entry' ] ) );
+    }
+	
     if( isset( $_POST[ 'cram-projects-start-date-entry' ] ) ) {
         update_post_meta( $post_id, 'cram-projects-start-date-entry', sanitize_text_field( $_POST[ 'cram-projects-start-date-entry' ] ) );
     }
